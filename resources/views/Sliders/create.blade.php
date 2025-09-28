@@ -10,22 +10,27 @@
         <h4 class="fw-bold">داشبورد</h4>
     </div>
 
-    <form class="row gy-4">
+    <form action="{{route('slider.store')}}" method="POST" class="row gy-4" >
+        @csrf
         <div class="col-md-6">
             <label class="form-label">عنوان</label>
-            <input name="title" type="text" class="form-control" />
+            <input name="title" type="text" value="{{ old('title') }}"  class="form-control" />
+            <div class="form-text text-danger"> @error('title') {{ $message }}  @enderror </div>
         </div>
         <div class="col-md-3">
             <label class="form-label">عنوان لینک</label>
-            <input name="link" type="text" class="form-control" />
+            <input name="link_title"  value="{{ old('link_title') }}" type="text" class="form-control" />
+           <div class="form-text text-danger"> @error('link_title') {{ $message }}  @enderror </div>
         </div>
         <div class="col-md-3">
             <label class="form-label">آدرس لینک</label>
-            <input name="link" type="text" class="form-control" />
+            <input name="link_address" value="{{ old('link_address') }}" type="text" class="form-control" />
+              <div class="form-text text-danger"> @error('link_address') {{ $message }}  @enderror </div>
         </div>
         <div class="col-md-12">
             <label class="form-label">متن</label>
-            <textarea name="body" class="form-control" rows="3"></textarea>
+            <textarea name="body" class="form-control" rows="3"> {{ old('body') }}</textarea>
+                          <div class="form-text text-danger"> @error('body') {{ $message }}  @enderror </div>
         </div>
 
         <div>
