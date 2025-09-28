@@ -52,7 +52,7 @@
                             </a>
                             <ul class="dropdown-menu sidebar-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">اسلایدر صفحه اصلی</a>
+                                    <a class="dropdown-item" href="{{ route('slider.create') }}">اسلایدر صفحه اصلی</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">بخش ویژگی ها</a>
