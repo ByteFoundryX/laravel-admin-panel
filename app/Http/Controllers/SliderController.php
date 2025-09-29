@@ -12,7 +12,8 @@ class SliderController extends Controller
         public function index()
     {
     
-        return view('Sliders.index');
+        $sliders = Slider::all();
+        return view('Sliders.index' , compact('sliders'));
 
     }
 
@@ -33,24 +34,24 @@ class SliderController extends Controller
     {
     
        
-        // $request->validate([
+        $request->validate([
                 
-        //     'title' => 'required|string',
-        //     'link_title' => 'required|string',
-        //     'link_address' => 'required|string',
-        //     'body' => 'required|string',
+            'title' => 'required|string',
+            'link_title' => 'required|string',
+            'link_address' => 'required|string',
+            'body' => 'required|string',
 
-        // ]);
+        ]);
 
 
-        // Slider::create([
+        Slider::create([
                
-        //     'title' => $request->title,
-        //     'link_title' => $request->link_title,
-        //     'link_address' => $request->link_address,
-        //     'body' => $request->body,
+            'title' => $request->title,
+            'link_title' => $request->link_title,
+            'link_address' => $request->link_address,
+            'body' => $request->body,
 
-        // ]);
+        ]);
 
 
         
