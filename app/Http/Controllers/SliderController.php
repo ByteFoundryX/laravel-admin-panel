@@ -7,6 +7,18 @@ use Illuminate\Http\Request;
 
 class SliderController extends Controller
 {
+
+
+        public function index()
+    {
+    
+        return view('Sliders.index');
+
+    }
+
+
+
+
     
     public function create()
     {
@@ -21,24 +33,28 @@ class SliderController extends Controller
     {
     
        
-        $request->validate([
+        // $request->validate([
                 
-            'title' => 'required|string',
-            'link_title' => 'required|string',
-            'link_address' => 'required|string',
-            'body' => 'required|string',
+        //     'title' => 'required|string',
+        //     'link_title' => 'required|string',
+        //     'link_address' => 'required|string',
+        //     'body' => 'required|string',
 
-        ]);
+        // ]);
 
 
-        Slider::create([
+        // Slider::create([
                
-            'title' => $request->title,
-            'link_title' => $request->link_title,
-            'link_address' => $request->link_address,
-            'body' => $request->body,
+        //     'title' => $request->title,
+        //     'link_title' => $request->link_title,
+        //     'link_address' => $request->link_address,
+        //     'body' => $request->body,
 
-        ]);
+        // ]);
+
+
+        
+         return redirect()->route('slider.index')->with('success' , 'اسلایدر  ایجاد شد ');
 
 
     }
