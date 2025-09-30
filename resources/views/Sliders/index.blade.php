@@ -37,7 +37,12 @@
                     <td>
                         <div class="d-flex">
                             <a href="{{ route('slider.edit' , ['slider' => $slider->id]) }}" class="btn btn-sm btn-outline-info me-2">ویرایش</a>
-                            <button class="btn btn-sm btn-danger">حذف</button>
+                         
+                            <form action="{{route('slider.destroy', ['slider' => $slider->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                   <button type="submit" class="btn btn-sm btn-danger">حذف</button>
+                            </form>
                         </div>
                     </td>
                 </tr>

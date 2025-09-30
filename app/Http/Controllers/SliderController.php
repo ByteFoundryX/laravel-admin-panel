@@ -40,6 +40,15 @@ class SliderController extends Controller
     }
 
 
+      public function destroy(Slider $slider)
+    {
+    
+        $slider->delete();
+        return redirect()->route('slider.index')->with('warning' , 'اسلایدر  حذف  شد ');
+    }
+
+
+
       
     public function update(Request $request ,  Slider $slider)
     {
