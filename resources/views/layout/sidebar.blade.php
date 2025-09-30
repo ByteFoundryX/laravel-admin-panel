@@ -50,17 +50,20 @@
                         <li class="nav-item dropdown-center">
                    
                             <a class="nav-link dropdown-toggle
-                             {{ request()->is('Sliders*') ? 'active' : '' }}" 
+                             {{ request()->is('Sliders*') ? 'active' : '' }}
+                               {{ request()->is('Features*') ? 'active' : '' }}
+                              
+                             " 
                              href="#" role="button" data-bs-toggle="dropdown">
                              <i class="bi bi-gear me-2"></i>
 تنظیمات سایت 
 </a>
                     <ul class="dropdown-menu sidebar-menu">
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('slider.index') }}">اسلایدر صفحه اصلی</a>
+                                    <a class="dropdown-item   {{ request()->is('Sliders*') ? 'active' : '' }}" href="{{ route('slider.index') }}">اسلایدر صفحه اصلی</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">بخش ویژگی ها</a>
+                                    <a class="dropdown-item  {{ request()->is('Features*') ? 'active' : '' }}" href="{{ route('feature.index') }}">بخش ویژگی ها</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">بخش درباره ما</a>
