@@ -30,6 +30,50 @@ class SliderController extends Controller
 
 
 
+    
+    
+    public function edit(Slider $slider)
+    {
+    
+        return view('Sliders.edit' , compact('slider'));
+
+    }
+
+
+      
+    public function update(Request $request ,  Slider $slider)
+    {
+    
+           
+        $request->validate([
+                
+            'title' => 'required|string',
+            'link_title' => 'required|string',
+            'link_address' => 'required|string',
+            'body' => 'required|string',
+
+        ]);
+
+
+        $slider->update([
+               
+            'title' => $request->title,
+            'link_title' => $request->link_title,
+            'link_address' => $request->link_address,
+            'body' => $request->body,
+
+        ]);
+
+        return redirect()->route('slider.index')->with('success' , 'اسلایدر  ویرایش شد ');
+
+    }
+
+
+
+
+
+
+
       public function store(Request $request)
     {
     

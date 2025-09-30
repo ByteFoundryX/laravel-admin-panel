@@ -36,7 +36,7 @@
       
                     <td>
                         <div class="d-flex">
-                            <button class="btn btn-sm btn-outline-info me-2">ویرایش</button>
+                            <a href="{{ route('slider.edit' , ['slider' => $slider->id]) }}" class="btn btn-sm btn-outline-info me-2">ویرایش</a>
                             <button class="btn btn-sm btn-danger">حذف</button>
                         </div>
                     </td>
