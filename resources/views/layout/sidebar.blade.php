@@ -5,6 +5,7 @@
                         <li class="nav-item">
                             <a class="nav-link 
                              {{ request()->is('/') ? 'active' : '' }}
+                              {{ request()->is('about-us*') ? 'active' : '' }}
                             " aria-current="page" href="{{ route('dashborad') }}">
                                 <i class="bi bi-grid me-2"></i>
                                 داشبورد
@@ -66,7 +67,7 @@
                                     <a class="dropdown-item  {{ request()->is('Features*') ? 'active' : '' }}" href="{{ route('feature.index') }}">بخش ویژگی ها</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">بخش درباره ما</a>
+                                    <a class="dropdown-item {{ request()->is('about-us*') ? 'active' : '' }}" href="{{ route('about.index') }}">بخش درباره ما</a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">بخش فوتر</a>
