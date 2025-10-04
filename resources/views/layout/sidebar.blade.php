@@ -53,6 +53,7 @@
                             <a class="nav-link dropdown-toggle
                              {{ request()->is('Sliders*') ? 'active' : '' }}
                                {{ request()->is('Features*') ? 'active' : '' }}
+                                {{ request()->is('contact-us*') ? 'active' : '' }}
                               
                              " 
                              href="#" role="button" data-bs-toggle="dropdown">
@@ -71,6 +72,9 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="#">بخش فوتر</a>
+                                </li>
+                                   <li>
+                                    <a class="dropdown-item {{ request()->is('contact-us*') ? 'active' : '' }} " href="{{ route('contact.index') }}">بخش پیام  کاربران</a>
                                 </li>
                             </ul>
                         </li>

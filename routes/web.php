@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SliderController;
@@ -45,3 +46,9 @@ Route::group(['prefix' => 'about-us'] , function(){
 
 
 
+Route::group(['prefix' => 'contact-us'] , function(){
+    Route::get('/' , [ContactUsController::class , 'index'])->name('contact.index');
+     Route::get('/{contact}' , [ContactUsController::class , 'show'])->name('contact.show');
+     Route::delete('/{contact}' , [ContactUsController::class , 'destroy'])->name('contact.destroy');
+    
+});
