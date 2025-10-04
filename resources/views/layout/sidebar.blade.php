@@ -5,7 +5,9 @@
                         <li class="nav-item">
                             <a class="nav-link 
                              {{ request()->is('/') ? 'active' : '' }}
-                              {{ request()->is('about-us*') ? 'active' : '' }}
+                       
+                               {{ request()->is('contact-us*') ? 'active' : '' }}
+                        
                             " aria-current="page" href="{{ route('dashborad') }}">
                                 <i class="bi bi-grid me-2"></i>
                                 داشبورد
@@ -52,8 +54,10 @@
                    
                             <a class="nav-link dropdown-toggle
                              {{ request()->is('Sliders*') ? 'active' : '' }}
-                               {{ request()->is('Features*') ? 'active' : '' }}
-                                {{ request()->is('contact-us*') ? 'active' : '' }}
+                             {{ request()->is('Features*') ? 'active' : '' }}
+                             {{ request()->is('contact-us*') ? 'active' : '' }}
+                             {{ request()->is('footer*') ? 'active' : '' }}
+                             {{ request()->is('about-us*') ? 'active' : '' }}
                               
                              " 
                              href="#" role="button" data-bs-toggle="dropdown">
@@ -71,7 +75,7 @@
                                     <a class="dropdown-item {{ request()->is('about-us*') ? 'active' : '' }}" href="{{ route('about.index') }}">بخش درباره ما</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">بخش فوتر</a>
+                                    <a class="dropdown-item  {{ request()->is('footer*') ? 'active' : '' }} " href="{{ route('footer.index') }}">بخش فوتر</a>
                                 </li>
                                    <li>
                                     <a class="dropdown-item {{ request()->is('contact-us*') ? 'active' : '' }} " href="{{ route('contact.index') }}">بخش پیام  کاربران</a>
