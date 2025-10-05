@@ -6,7 +6,7 @@
                             <a class="nav-link 
                              {{ request()->is('/') ? 'active' : '' }}
                        
-                               {{ request()->is('contact-us*') ? 'active' : '' }}
+                               {{-- {{ request()->is('contact-us*') ? 'active' : '' }} --}}
                         
                             " aria-current="page" href="{{ route('dashborad') }}">
                                 <i class="bi bi-grid me-2"></i>
@@ -15,7 +15,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link " href="#">
                                 <i class="bi bi-people me-2"></i>
                                 کاربران
                             </a>
@@ -27,7 +27,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link  {{ request()->is('categories*') ? 'active' : '' }} " href="{{ route('category.index') }}">
                                 <i class="bi bi-grid-3x3-gap me-2"></i>
                                 دسته بندی
                             </a>
@@ -58,6 +58,7 @@
                              {{ request()->is('contact-us*') ? 'active' : '' }}
                              {{ request()->is('footer*') ? 'active' : '' }}
                              {{ request()->is('about-us*') ? 'active' : '' }}
+             
                               
                              " 
                              href="#" role="button" data-bs-toggle="dropdown">
