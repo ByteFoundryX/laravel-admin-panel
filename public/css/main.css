@@ -185,3 +185,23 @@ body {
   color: white;
 }
 /* End Style for Toast with sweetalert 2 */
+
+
+
+/* هم‌اندازه کردن input های تاریخ Jalali Datepicker */
+input[data-jdp] {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+}
+
+/* ظاهر popup Jalali Datepicker */
+.jdp-container {
+    z-index: 1050 !important; /* بالاتر از سایر عناصر */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    border-radius: 0.5rem;
+    direction: rtl;   /* راست‌چین */
+    text-align: right;
+}

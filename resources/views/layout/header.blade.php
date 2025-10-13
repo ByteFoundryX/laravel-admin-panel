@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
 
     <title>webprog.io || @yield('title')</title>
+       @yield('link') 
 </head>
 
 <body>

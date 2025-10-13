@@ -1,0 +1,83 @@
+[33mcommit 60f9c7f02791ae7cfdbb8f4f210807ebc2d08b02[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ali ahmadi <ByteFoundryX@gmail.com>
+Date:   Tue Oct 7 16:35:04 2025 +0330
+
+    فایل تستی
+
+[33mcommit 47853fef8f0f5683dce53e9b1ff7e781e6a50333[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Sun Oct 5 13:32:16 2025 +0330
+
+    ایجاد دسته بندی
+
+[33mcommit d7b41f4120457c698257381f872a0ba34b36a8da[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Sun Oct 5 01:26:44 2025 +0330
+
+    اجاد بخش فوتر
+
+[33mcommit af143ce8c21a3b794cdb0cdf3573c6a17efca491[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Sat Oct 4 11:12:16 2025 +0330
+
+    ایجاد صفحه تماس با ما
+
+[33mcommit 2129656c612c760c5771571cb3a66a1a8538e6f0[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Wed Oct 1 15:28:02 2025 +0330
+
+    ایجاد بخش در باره ما
+
+[33mcommit 502ab41cdee2c4fdd21e9429bf1f197a087e9c0d[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Wed Oct 1 01:57:59 2025 +0330
+
+    ایجاد و نمایش ویژگی و حذف
+
+[33mcommit 773d9201a016d35451c38df2aa36c0ecbb612f9b[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Tue Sep 30 13:03:28 2025 +0330
+
+    ایجاد  دکمه حذف اسلایدر
+
+[33mcommit 87866e2d49c642375a3eb3c8ba961583ce9ee6a9[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Tue Sep 30 12:35:38 2025 +0330
+
+    ویرایش اسلایدر
+
+[33mcommit 167a94e2f10179c5640ecae646682849b25a1733[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Mon Sep 29 15:52:10 2025 +0330
+
+    نمایش اسلایدر  در پنل ادمین
+
+[33mcommit 70617301a43b3e0b22feceecd774a8a99db6c62a[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Mon Sep 29 15:01:54 2025 +0330
+
+    ایجاد سویت الرت
+
+[33mcommit 11fa22d3f2b8d9e69ad2c1806ca4e36afe75cc7d[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Sun Sep 28 15:07:19 2025 +0330
+
+    ایجاد  روت  Store
+
+[33mcommit 0412a828d0c993f1c5fdf10594684b46b516015d[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Sun Sep 28 14:00:50 2025 +0330
+
+    ایجاد Route create    controller  and model  and view
+
+[33mcommit 16cd28294616cb46c7d45c775543877727dcdf13[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Fri Sep 26 12:04:12 2025 +0330
+
+    صفحه بندی و ساخت layout
+
+[33mcommit 60aecfa55e4ea470d855650283ebc99cdcdbe5a7[m
+Author: flutterized-dev <flutterized.dev@gmail.com>
+Date:   Fri Sep 26 10:46:19 2025 +0330
+
+    سختار اولیه پروژه
